@@ -14,4 +14,3 @@ deploy:
   secret_access_key: "cpwgKomVxwHQaaW3yh4oL3LnKP2uUyldmyUvpeVP"
   bucket: "docker-course-bucket"
   skip_cleanup: true
-  local-dir: app
