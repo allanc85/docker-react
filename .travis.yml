@@ -7,3 +7,11 @@ before_install:
 
 script:
   - docker run allancristian/docker-react npm run test -- --coverage
+
+deploy:
+  provider: gcs
+  access_key_id: "GOOGCDW752TETMEWPQ46Y3IS"
+  secret_access_key: "cpwgKomVxwHQaaW3yh4oL3LnKP2uUyldmyUvpeVP"
+  bucket: "docker-course-bucket"
+  skip_cleanup: true
+  local-dir: app
